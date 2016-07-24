@@ -10,5 +10,5 @@ renameShp <- function(fpath, newName) {
   sapply(ls, FUN=function(p){
     file.rename(from=p, to=sub(pattern=fname,replacement=newName, p))
   })
-  print(paste("Renamed", length(ls), "shapefiles."))
+  print(paste("Renamed", length(ls), "files."))
 }
